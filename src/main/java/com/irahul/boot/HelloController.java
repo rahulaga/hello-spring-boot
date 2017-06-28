@@ -15,4 +15,9 @@ public class HelloController {
 	public String hello(){
 		return "Hello World!";
 	}
+	
+	@RequestMapping(value="/hello", method=RequestMethod.POST)
+	public String helloPost(){
+		return "POST Hello World!";
+	}
 }
